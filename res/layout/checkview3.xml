@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.cartalk.view.CheckTableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:stretchColumns="0,1,2"
+    android:shrinkColumns="1,2"
+    >
+    
+    <TextView
+        android:text="Table Test"
+        android:gravity="center"/>
+    <TableRow>
+        <TextView
+            android:layout_column="1"
+            android:text="姓名"
+            android:gravity="center"/>
+        <TextView
+            android:text="基本信息"
+            android:gravity="center"/>
+    </TableRow>
+    <TableRow>
+        <TextView
+            android:text=" 1 "
+            android:gravity="center"/>
+        <TextView
+            android:text="hoyah"
+            android:gravity="left"/>
+        <TextView
+            android:text="Wuhan University"
+            android:gravity="right"/>
+    </TableRow>
+    <TableRow>
+        <TextView
+            android:text=" 2 "
+            android:gravity="center"/>
+        <TextView
+            android:text="Google"
+            android:gravity="left"/>
+        <TextView
+            android:text="hello Google"
+            android:gravity="right"/>
+    </TableRow>
+    <TableRow>
+        <TextView
+            android:text="3"
+            android:gravity="center"/>
+        <TextView
+            android:text="Android"
+            android:gravity="left"/>
+        <TextView
+            android:text="Android OS"
+            android:gravity="right"/>
+    </TableRow>
+</com.cartalk.view.CheckTableLayout>

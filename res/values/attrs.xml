@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources>
+
+    <declare-styleable name="RoundedCornersImage">
+        <attr format="dimension" name="cornerRadius" />
+    </declare-styleable>
+
+</resources>

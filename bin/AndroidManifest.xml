@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.cartalk"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="4"/>
+        <!-- android:targetSdkVersion="8"-->
+    <uses-permission android:name="android.permission.INTERNET"/>
+
+    <application android:label="@string/app_name" >
+        <activity
+            android:label="@string/app_name"
+            android:name="MainActivity"
+            android:screenOrientation="sensor"
+            android:configChanges="orientation"
+            android:theme="@android:style/Theme.Light" >
+            <intent-filter >
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".RealTimeInfoActivity" 
+            android:screenOrientation="behind">
+        </activity>
+        <activity android:name=".NavigationActivity" 
+            android:screenOrientation="behind">
+        </activity>
+        <activity android:name=".CheckActivity" 
+            android:screenOrientation="behind">
+        </activity>
+        <activity android:name=".ConfigActivity" android:screenOrientation="behind" 
+        	android:configChanges="orientation|keyboardHidden"> </activity>
+        <activity android:name=".ChartListActivity" android:screenOrientation="behind" 
+        	android:configChanges="orientation|keyboardHidden" android:theme="@android:style/Theme.Dialog"  > </activity>
+        <activity android:name=".ChartTypeActivity" android:screenOrientation="behind" 
+        	android:configChanges="orientation|keyboardHidden" android:theme="@android:style/Theme.Dialog"  > </activity>
+        <activity android:name=".ChartPreferActivity" android:screenOrientation="behind" 
+        	android:configChanges="orientation|keyboardHidden"> </activity>
+        <activity android:name=".TroubleCodeActivity" android:screenOrientation="behind" 
+        	android:configChanges="orientation|keyboardHidden"> </activity>
+        <activity android:name=".FuelEconActivity" android:screenOrientation="behind" 
+        	android:configChanges="orientation|keyboardHidden"> </activity>
+        <activity android:name=".WatchListActivity" android:screenOrientation="behind" 
+        	android:configChanges="orientation|keyboardHidden"> </activity>
+        <activity android:name=".CarDetailActivity" android:screenOrientation="behind" 
+        	android:configChanges="orientation|keyboardHidden"> </activity>
+        <activity android:name=".CarBreakRulesActivity" android:screenOrientation="behind" 
+        	android:configChanges="orientation|keyboardHidden"> </activity>
+        <activity android:name=".LoginActivity" android:screenOrientation="behind" 
+        	android:configChanges="orientation|keyboardHidden"> </activity>
+        
+        <service android:name="com.cartalk.io.ObdGatewayService" android:exported="false"/>
+    </application>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"></uses-permission>
+    <uses-permission android:name="android.permission.INTERNET"></uses-permission>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"></uses-permission>
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE"></uses-permission>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"></uses-permission>
+    <uses-permission android:name="android.permission.BLUETOOTH"></uses-permission>
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN"></uses-permission>
+    <uses-permission android:name="android.permission.WAKE_LOCK"></uses-permission>
+</manifest>

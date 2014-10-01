@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+        xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceCategory
+            android:title="OBD Preferences">
+
+                <CheckBoxPreference
+                        android:key="upload_data_preference"
+                        android:defaultValue="false"
+                        android:title="上传数据"
+                        android:summaryOff="关闭上传数据"
+                        android:summaryOn="启动上传数据" android:dialogTitle="上传数据" android:enabled="false"/>
+
+        <EditTextPreference
+            android:key="upload_url_preference"
+            android:defaultValue="http://www.ral.ucar.edu/~lambi/obd/get_data.php"
+            android:title="上传地址"
+            android:summary="实时上传数据地址"
+            android:dialogTitle="上传地址" android:enabled="false"/>
+
+        <EditTextPreference
+            android:key="vehicle_id_preference"
+            android:defaultValue=""
+            android:title="车辆编号"
+            android:summary="上传数据的车辆编号(可选)"
+            android:dialogTitle="车辆编号" />
+
+        <ListPreference
+            android:key="bluetooth_list_preference"
+            android:title="蓝牙设备"
+            android:summary="蓝牙配对设备类表."
+            android:dialogTitle="蓝牙设备" />
+
+                <CheckBoxPreference
+                        android:key="imperial_units_preference"
+                        android:defaultValue="false"
+                        android:title="公英制"
+                        android:summaryOff="英制"
+                        android:summaryOn="公制" android:dialogTitle="公英制"/>
+
+                <CheckBoxPreference
+                        android:key="enable_gps_preference"
+                        android:defaultValue="false"
+                        android:title="GPS"
+                        android:summaryOff="启动GPS"
+                        android:summaryOn="关闭GPS" android:dialogTitle="GPS"/>
+
+                <EditTextPreference
+                        android:key="update_period_preference"
+            android:defaultValue="4"
+            android:title="更新间隔(秒)"
+            android:summary="车辆数据更新间隔"
+            android:dialogTitle="更新间隔(秒)" />
+
+        <EditTextPreference
+                        android:key="max_fuel_econ_preference"
+            android:defaultValue="70"
+            android:title="最大燃油经济值"
+            android:summary="大于此值得数据将被报告"
+            android:dialogTitle="最大燃油经济值" />
+
+        <EditTextPreference
+                        android:key="volumetric_efficiency_preference"
+            android:defaultValue=".85"
+            android:title="Volumetric Efficiency"
+            android:summary="Used for fuel economy on vehicles without MAF sensor"
+            android:dialogTitle="Volumetric Efficiency (eg 0.85)" />
+
+        <EditTextPreference
+                        android:key="engine_displacement_preference"
+            android:defaultValue="1.6"
+            android:title="引擎排量 (公升)"
+            android:summary="Used for fuel economy on vehicles without MAF sensor"
+            android:dialogTitle="引擎排量 (公升)" />
+
+        <EditTextPreference
+                        android:key="reader_config_preference"
+            android:defaultValue="atsp0\natz"
+            android:title="Reader Config Commands"
+            android:summary="Commands to configure bluetooth reader, separate with new line"
+            android:dialogTitle="Reader Config Commands" />
+
+    </PreferenceCategory>
+    <PreferenceCategory
+          android:title="OBD Commands">
+                <PreferenceScreen
+                    android:key="obd_commands_screen"
+                        android:title="OBD 命令"
+                        android:summary="选择实时命令.">
+                </PreferenceScreen>
+        </PreferenceCategory>
+</PreferenceScreen>

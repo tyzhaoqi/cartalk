@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/background"
+    android:orientation="vertical">
+    <ImageView
+        android:id="@+id/checkbanner"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dip"
+        android:src="@drawable/checkbanner"/>
+    <com.cartalk.view.CheckScrollLayout
+        android:id="@+id/checkviews"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" 
+        android:visibility="visible"
+        android:layout_below="@id/checkbanner"
+        >
+        <include layout="@layout/checkview1" />
+        <include layout="@layout/checkview2" />
+        <include layout="@layout/checkview3" />             
+    </com.cartalk.view.CheckScrollLayout>
+</LinearLayout>

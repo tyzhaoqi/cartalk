@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">车语</string>
+    <string name="service_started">OBD 连接已经启动.</string>
+    <string name="service_stopped">OBD 连接已经关闭.</string>
+    <string name="notification_label">点击开始体验.</string>
+    <string name="login_label_username">账号</string>
+    <string name="login_username_hint">Email或手机号</string>
+    <string name="login_label_password">密码</string>
+    <string name="login_label_signin">登陆</string>
+    <string name="login_register_link"><a href="http://www.sohu.com">注册</a></string>
+    
+</resources>

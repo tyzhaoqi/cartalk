@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+        xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceCategory
+          android:title="仪表显示">
+                <PreferenceScreen
+                    android:key="prefer_dail_chart"
+                        android:title="仪表显示"
+                        android:summary="Select the commands you would like to see in real-time.">
+                </PreferenceScreen>
+        </PreferenceCategory>
+    <PreferenceCategory
+          android:title="图表显示">
+                <PreferenceScreen
+                    android:key="prefer_gragh_chart"
+                        android:title="图表显示"
+                        android:summary="Select the commands you would like to see in real-time.">
+                </PreferenceScreen>
+        </PreferenceCategory>
+    <PreferenceCategory
+          android:title="数字显示">
+                <PreferenceScreen
+                    android:key="prefer_digit_chart"
+                        android:title="数字显示"
+                        android:summary="Select the commands you would like to see in real-time.">
+                </PreferenceScreen>
+        </PreferenceCategory>
+</PreferenceScreen>
